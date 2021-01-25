@@ -187,20 +187,6 @@ spec:
   - kustomizeConfig:
       overlays:
       - application
-      repoRef:
-        name: manifests
-        path: pytorch-job/pytorch-job-crds
-    name: pytorch-job-crds
-  - kustomizeConfig:
-      overlays:
-      - application
-      repoRef:
-        name: manifests
-        path: pytorch-job/pytorch-operator
-    name: pytorch-operator
-  - kustomizeConfig:
-      overlays:
-      - application
       parameters:
       - name: namespace
         value: knative-serving
@@ -251,20 +237,6 @@ spec:
         name: manifests
         path: tensorboard
     name: tensorboard
-  - kustomizeConfig:
-      overlays:
-      - application
-      repoRef:
-        name: manifests
-        path: tf-training/tf-job-crds
-    name: tf-job-crds
-  - kustomizeConfig:
-      overlays:
-      - application
-      repoRef:
-        name: manifests
-        path: tf-training/tf-job-operator
-    name: tf-job-operator
   - kustomizeConfig:
       overlays:
       - application
